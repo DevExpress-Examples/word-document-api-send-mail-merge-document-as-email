@@ -45,11 +45,11 @@ Namespace MailMergeEmail
         End Sub
         Private imageId As Integer
 
-        Public Function CreateCssUri(ByVal rootUri As String, ByVal styleText As String, ByVal relativeUri As String) As String
+        Public Function CreateCssUri(ByVal rootUri As String, ByVal styleText As String, ByVal relativeUri As String) As String Implements IUriProvider.CreateCssUri
             Return String.Empty
         End Function
 
-        Public Function CreateImageUri(ByVal rootUri As String, ByVal image As OfficeImage, ByVal relativeUri As String) As String
+        Public Function CreateImageUri(ByVal rootUri As String, ByVal image As OfficeImage, ByVal relativeUri As String) As String Implements IUriProvider.CreateImageUri
             Dim imageName As String = String.Format("image{0}.png", imageId)
             imageId += 1
 
