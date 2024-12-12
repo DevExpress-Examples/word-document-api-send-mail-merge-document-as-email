@@ -8,6 +8,9 @@
 
 This code example shows how to transfer the mail-merge document into Outlook using [Outlook Interop API](https://docs.microsoft.com/en-us/office/client-developer/outlook/pia/welcome-to-the-outlook-primary-interop-assembly-reference) and [Word Processing File API](https://docs.devexpress.com/OfficeFileAPI/17488/word-processing-document-api).
 
+> [!Important]  
+> The Universal Subscription or an additional Office File API Subscription is required to use this example in production code. For pricing information, please refer to the [DevExpress Subscription](https://www.devexpress.com/Subscriptions/) page. 
+
 # Implementation Details
 
 The Outlook Interpop API prepares a mail item based on the [RichEditDocumentServer]() content. Images are processed using a custom [IUriProvider Interface](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Office.Services.IUriProvider) implementor. Convert native images into Outlook mail item attachments. Refer to the following web articles to learn how to deal with the Outlook-related part of this solution:
