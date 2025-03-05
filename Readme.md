@@ -13,7 +13,7 @@ This code example shows how to transfer the mail-merge document into Outlook usi
 
 # Implementation Details
 
-The Outlook Interpop API prepares a mail item based on the [RichEditDocumentServer]() content. Images are processed using a custom [IUriProvider Interface](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Office.Services.IUriProvider) implementor. Convert native images into Outlook mail item attachments. Refer to the following web articles to learn how to deal with the Outlook-related part of this solution:
+The Outlook Interpop API prepares a mail item based on the [RichEditDocumentServer](https://docs.devexpress.com/OfficeFileAPI/DevExpress.XtraRichEdit.RichEditDocumentServer) content. Images are processed using a custom [IUriProvider Interface](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Office.Services.IUriProvider) implementor. Convert native images into Outlook mail item attachments. Refer to the following web articles to learn how to deal with the Outlook-related part of this solution:
 
 * [How to embed image in HTML body in C# into Outlook mai](http://social.msdn.microsoft.com/Forums/en-US/vsto/thread/6c063b27-7e8a-4963-ad5f-ce7e5ffb2c64/)
 * [Attach stream data with Outlook mail client](http://social.msdn.microsoft.com/Forums/pl/outlookdev/thread/17efe46b-18fe-450f-9f6e-d8bb116161d8)
@@ -23,8 +23,8 @@ The Outlook Interpop API prepares a mail item based on the [RichEditDocumentServ
 
 | C# | Visual Basic |
 |---|---|
-| [Form1.cs](./CS/MailMergeEmail/Form1.cs) | [Form1.vb](./VB/MailMergeEmail/Form1.vb) |
-| [RichEditMailMessageExporter.cs](./CS/MailMergeEmail/RichEditMailMessageExporter.cs) | [RichEditMailMessageExporter.vb](./VB/MailMergeEmail/RichEditMailMessageExporter.vb) |
+| [Program.cs](./CS/Program.cs) | [Program.vb](./VB/Program.vb) |
+| [RichEditMailMessageExporter.cs](./CS/RichEditMailMessageExporter.cs) | [RichEditMailMessageExporter.vb](./VB/RichEditMailMessageExporter.vb) |
 
 # Documentaton
 

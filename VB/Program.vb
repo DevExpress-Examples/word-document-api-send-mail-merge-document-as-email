@@ -1,31 +1,29 @@
-Imports DevExpress.XtraEditors
-Imports DevExpress.XtraRichEdit
-Imports Outlook = Microsoft.Office.Interop.Outlook
 Imports System
+Imports System.Windows.Forms
+Imports DevExpress.XtraRichEdit
+Imports Microsoft.Office.Interop
+Imports Microsoft.SqlServer
+Imports Outlook = Microsoft.Office.Interop.Outlook
 
 Namespace MailMergeEmail
 
-    Public Partial Class Form1
-        Inherits XtraForm
+    Friend Module Program
 
+        ''' <summary>
+        ''' The main entry point for the application.
+        ''' </summary>
         Private server As RichEditDocumentServer
-
-        Public Sub New()
-            InitializeComponent()
+        Sub Main()
             server = New RichEditDocumentServer()
             server.LoadDocument("MailMergeSimple.docx")
+            SendAnEmail(server)
         End Sub
-
-        Private Sub SendAnEmail()
+        Private Sub SendAnEmail(server As RichEditDocumentServer)
             Dim application As Outlook.Application = New Outlook.Application()
             Dim mailItem As Outlook.MailItem = CType(application.CreateItem(Outlook.OlItemType.olMailItem), Outlook.MailItem)
             Dim exporter As RichEditMailMessageExporter = New RichEditMailMessageExporter(server, mailItem)
             exporter.Export()
             mailItem.Display(False)
         End Sub
-
-        Private Sub simpleButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
-            SendAnEmail()
-        End Sub
-    End Class
+    End Module
 End Namespace
