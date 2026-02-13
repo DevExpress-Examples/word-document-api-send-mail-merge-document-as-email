@@ -28,7 +28,7 @@ The Outlook Interpop API prepares a mail item based on the [RichEditDocumentServ
 * [Mail Merge in Word Processing Document API](https://docs.devexpress.com/OfficeFileAPI/15277/word-processing-document-api/mail-merge)
 * [How to: Send the Document as an E-mail](https://docs.devexpress.com/OfficeFileAPI/120519/word-processing-document-api/examples/export/how-to-send-the-mail-merge-document-as-an-e-mail)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=word-document-api-send-mail-merge-document-as-email&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=word-document-api-send-mail-merge-document-as-email&~~~was_helpful=no)
 
